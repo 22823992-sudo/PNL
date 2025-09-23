@@ -1,0 +1,32 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• de (5 veces)
+• me (5 veces)
+• tus (4 veces)
+• el (3 veces)
+• al (3 veces)
+• cuando (2 veces)
+• se (2 veces)
+• no (1 veces)
+• en (1 veces)
+• mi (1 veces)
+• la (1 veces)
+• esta (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+ritmo ojos marca compas ritmo ojos deja paz miras corazon acelera miras va
+primavera ritmo ojos ritmo ojos bailo cancion ritmo total 121 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 29
+• Tokens filtrados: 24
+• Vocabulario original: 28
+• Vocabulario filtrado: 16
+• Porcentaje removido: 54.7%

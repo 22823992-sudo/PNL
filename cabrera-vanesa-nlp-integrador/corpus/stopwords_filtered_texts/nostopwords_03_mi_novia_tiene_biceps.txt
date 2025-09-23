@@ -1,0 +1,37 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• mi (5 veces)
+• me (5 veces)
+• tiene (3 veces)
+• que (2 veces)
+• en (1 veces)
+• un (1 veces)
+• yo (1 veces)
+• cuando (1 veces)
+• ella (1 veces)
+• si (1 veces)
+• no (1 veces)
+• nada (1 veces)
+• los (1 veces)
+• mios (1 veces)
+• todos (1 veces)
+• mis (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+novia levanta pesas gimnasio siento extrano vamos caminando defiende alguien
+quiere pegar gusta vengan cuidar novia biceps novia biceps novia biceps mas
+grandes total 146 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 27
+• Tokens filtrados: 26
+• Vocabulario original: 37
+• Vocabulario filtrado: 21
+• Porcentaje removido: 50.9%

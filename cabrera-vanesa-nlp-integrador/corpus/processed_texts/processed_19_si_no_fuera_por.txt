@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+si no fuera por estos dias grises si no fuera por esta lluvia constante si no fuera por las malas noticias todo seria diferente si no fuera por tu ausencia si no fuera por mi mala suerte si no fuera por esta paciencia que se me esta acabando si no... (total: 136 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+si no fuer por estos dias gris si no fuer por esta lluvi constant si no fuer por las mal notici tod seri diferent si no fuer por tu ausenci si no fuer por mi mal suert si no fuer por esta pacienci que se me esta acab si no... (total: 136 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+si no fuero por esto dia gris si no fuero por esto lluvio constante si no fuero por la mala noticia todo serio diferente si no fuero por tu ausencio si no fuero por mi malo suerte si no fuero por esto paciencio que se me esto acabar si no... (total: 136 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 136
+• Vocabulario original: 45
+• Vocabulario stemmed: 44
+• Vocabulario lemmatized: 43

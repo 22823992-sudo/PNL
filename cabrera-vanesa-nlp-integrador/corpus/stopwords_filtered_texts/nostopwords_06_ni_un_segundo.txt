@@ -1,0 +1,29 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• no (6 veces)
+• que (6 veces)
+• hay (4 veces)
+• ni (3 veces)
+• un (3 veces)
+• cuando (2 veces)
+• el (2 veces)
+• se (2 veces)
+• nos (2 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+tiempo perder segundo tiempo perder segundo mundo viene encima sabes hacer
+mundo viene encima sabes hacer tiempo perder segundo tiempo total 102 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 30
+• Tokens filtrados: 23
+• Vocabulario original: 20
+• Vocabulario filtrado: 11
+• Porcentaje removido: 56.6%

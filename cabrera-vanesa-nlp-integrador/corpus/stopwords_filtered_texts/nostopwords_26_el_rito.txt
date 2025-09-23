@@ -1,0 +1,34 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• el (4 veces)
+• un (4 veces)
+• es (3 veces)
+• las (2 veces)
+• como (2 veces)
+• que (2 veces)
+• no (2 veces)
+• me (1 veces)
+• voy (1 veces)
+• hacia (1 veces)
+• tu (1 veces)
+• te (1 veces)
+• una (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+todas noches mismo rito levanto cuarto todas noches mismo rito miro dormir
+fantasma ritual puedo evitar ceremonia personal ritual puedo evitar acto
+sacramental rito rito total 113 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 25
+• Tokens filtrados: 28
+• Vocabulario original: 32
+• Vocabulario filtrado: 19
+• Porcentaje removido: 47.2%

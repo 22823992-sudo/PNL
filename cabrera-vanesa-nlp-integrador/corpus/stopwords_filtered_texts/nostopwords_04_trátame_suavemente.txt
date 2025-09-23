@@ -1,0 +1,43 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• que (2 veces)
+• un (2 veces)
+• no (2 veces)
+• de (2 veces)
+• me (1 veces)
+• ha (1 veces)
+• la (1 veces)
+• se (1 veces)
+• tras (1 veces)
+• tus (1 veces)
+• tu (1 veces)
+• pero (1 veces)
+• esas (1 veces)
+• son (1 veces)
+• esa (1 veces)
+• es (1 veces)
+• yo (1 veces)
+• soy (1 veces)
+• muy (1 veces)
+• para (1 veces)
+• los (1 veces)
+• ya (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+alguien dicho soledad esconde ojos blusa azul esconde alma desesperadamente
+sola formas mirar manera hablar tratame suavemente fragil ser hombre tratame
+suavemente golpes fuertes total 126 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 26
+• Tokens filtrados: 27
+• Vocabulario original: 46
+• Vocabulario filtrado: 24
+• Porcentaje removido: 49.1%

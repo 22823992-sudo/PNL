@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• el (5 veces)
+• en (4 veces)
+• tu (3 veces)
+• hay (2 veces)
+• los (2 veces)
+• de (2 veces)
+• todo (2 veces)
+• todos (1 veces)
+• han (1 veces)
+• para (1 veces)
+• se (1 veces)
+• del (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+hoy picnic estan invitados hoy picnic problemas quedado lado trae guitarra trae
+alegria trae guitarra cantar dia picnic picnic olvidate veni compartir vecinos
+quejan ruido total 99 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 25
+• Tokens filtrados: 28
+• Vocabulario original: 33
+• Vocabulario filtrado: 21
+• Porcentaje removido: 47.2%

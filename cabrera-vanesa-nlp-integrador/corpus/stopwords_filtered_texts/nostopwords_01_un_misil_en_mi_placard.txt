@@ -1,0 +1,39 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• tu (4 veces)
+• un (4 veces)
+• no (3 veces)
+• como (2 veces)
+• pero (2 veces)
+• en (2 veces)
+• mi (2 veces)
+• lo (2 veces)
+• voy (1 veces)
+• por (1 veces)
+• una (1 veces)
+• vez (1 veces)
+• ya (1 veces)
+• se (1 veces)
+• algo (1 veces)
+• me (1 veces)
+• aqui (1 veces)
+• ves (1 veces)
+• esta (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+caminando calle mas paso casa miro ventana ladron ladron silueta ve detiene
+misil placard misil placard sabes ahi total 119 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 32
+• Tokens filtrados: 21
+• Vocabulario original: 37
+• Vocabulario filtrado: 18
+• Porcentaje removido: 60.4%

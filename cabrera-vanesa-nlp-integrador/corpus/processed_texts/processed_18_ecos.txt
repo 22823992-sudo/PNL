@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+ecos de tu voz rebotan en mi cabeza ecos de tu voz me llenan de tristeza no puedo olvidar las cosas que me dijiste no puedo borrar los dias que estuviste ecos ecos de lo que fuimos ecos ecos de lo que perdimos tu risa aun suena en los rincones... (total: 100 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+ecos de tu voz rebot en mi cabez ecos de tu voz me llen de tristez no pued olvid las cos que me dij no pued borr los dias que estuv ecos ecos de lo que fuim ecos ecos de lo que perd tu ris aun suen en los rincon... (total: 100 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+eco de tu voz rebotan en mi cabezo eco de tu voz me llenan de tristezo no puedo olvidar la cosa que me dijiste no puedo borrar lo dia que estuviste eco eco de lo que fuimo eco eco de lo que perdimo tu riso aun sueno en lo rincon... (total: 100 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 100
+• Vocabulario original: 48
+• Vocabulario stemmed: 48
+• Vocabulario lemmatized: 45

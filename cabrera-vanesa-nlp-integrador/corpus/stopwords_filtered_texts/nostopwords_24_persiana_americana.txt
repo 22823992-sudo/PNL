@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• de (6 veces)
+• una (2 veces)
+• el (2 veces)
+• la (2 veces)
+• tu (2 veces)
+• las (2 veces)
+• entre (1 veces)
+• se (1 veces)
+• por (1 veces)
+• que (1 veces)
+• en (1 veces)
+• mi (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+persiana americana separa dia noche persiana americana mundo derroche rayas luz
+filtran rendijas alma rayas luz brillan penumbra calma persiana americana
+cortina ilusiones persiana americana filtra emociones abro total 94 tokens
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 22
+• Tokens filtrados: 31
+• Vocabulario original: 35
+• Vocabulario filtrado: 23
+• Porcentaje removido: 41.5%

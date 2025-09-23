@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+mi corazon es un delator que cuenta todo lo que siento mi corazon es un delator que no guarda ningun secreto late fuerte cuando mentis se acelera cuando te veo late fuerte cuando mentis como un tambor en mi pecho corazon delator no sabes callar corazon delator todo vas contar... (total: 96 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+mi corazon es un delator que cuent tod lo que sient mi corazon es un delator que no guard ningun secret lat fuert cuand mentis se aceler cuand te veo lat fuert cuand mentis com un tambor en mi pech corazon delator no sab call corazon delator tod vas cont... (total: 96 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+mi corazon es un delator que cuento todo lo que siento mi corazon es un delator que no guardo ningun secreto late fuerte cuar menti se acelero cuar te veo late fuerte cuar menti como un tambor en mi pecho corazon delator no sab callar corazon delator todo va contar... (total: 96 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 96
+• Vocabulario original: 49
+• Vocabulario stemmed: 48
+• Vocabulario lemmatized: 47

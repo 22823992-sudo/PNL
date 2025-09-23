@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+tiembla me tiembla el alma cuando te veo llegar hasta los dientes me empiezan castanear se mueve el suelo bajo de mis pies tiembla me late el miedo cuando empezas hablar pierdo el sentido no puedo coordinar se mueve el suelo bajo de mis pies cuando pase el temblor voy... (total: 113 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+tiembl me tiembl el alma cuand te veo lleg hast los dient me empiez castan se muev el suel baj de mis pies tiembl me lat el mied cuand empez habl pierd el sent no pued coordin se muev el suel baj de mis pies cuand pas el temblor voy... (total: 113 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+tiemblo me tiemblo el almo cuar te veo llegar hasto lo dient me empiezan castanear se mueve el suelo bajo de mi pi tiemblo me late el miedo cuar empeza hablar pierdo el senter no puedo coordinar se mueve el suelo bajo de mi pi cuar pase el temblor voy... (total: 113 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 113
+• Vocabulario original: 47
+• Vocabulario stemmed: 47
+• Vocabulario lemmatized: 46

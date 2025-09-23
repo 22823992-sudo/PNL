@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+como una caja negra guardo todos los secretos como una caja negra despues de los accidentes nadie puede abrirme nadie tiene la llave nadie puede leerme los mensajes que guardo caja negra final de la historia caja negra ultima memoria dentro tengo guardado todo lo que paso dentro tengo sellado... (total: 92 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+com una caj negr guard tod los secret com una caj negr despu de los accident nadi pued abrirm nadi tien la llav nadi pued leerm los mensaj que guard caj negr final de la histori caj negr ultim memori dentr teng guard tod lo que pas dentr teng sell... (total: 92 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+como uno cajo negro guardo todo lo secreto como uno cajo negro despu de lo accident nadie puede abrirme nadie tiene lo llave nadie puede leerme lo mensaj que guardo cajo negro final de lo historio cajo negro ultimo memorio dentro tengo guardar todo lo que paso dentro tengo sellar... (total: 92 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 92
+• Vocabulario original: 45
+• Vocabulario stemmed: 43
+• Vocabulario lemmatized: 42

@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+tu danza es una danza rota que me lleva ningun lado tu danza es una danza rota como un disco rayado giras sin ton ni son sin ritmo sin compas giras como una loca que no puede parar danza rota danza rota tu danza es una danza rota danza rota... (total: 107 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+tu danz es una danz rot que me llev ningun lad tu danz es una danz rot com un disc ray gir sin ton ni son sin ritm sin comp gir com una loc que no pued par danz rot danz rot tu danz es una danz rot danz rot... (total: 107 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+tu danzo es uno danzo roto que me llevo ningun lar tu danzo es uno danzo roto como un disco rayar gira sin ton ni son sin ritmo sin compa gira como uno loco que no puede parar danzo roto danzo roto tu danzo es uno danzo roto danzo roto... (total: 107 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 107
+• Vocabulario original: 31
+• Vocabulario stemmed: 31
+• Vocabulario lemmatized: 31

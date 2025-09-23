@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+los languidecientes se arrastran por la vida los languidecientes sin ganas ni medida van por las calles como zombies modernos van por las calles con sus suenos eternos languidecientes languidecientes perdieron la pasion languidecientes miran television toda la madrugada miran television sin hacer nada se levantan tarde se acuestan temprano... (total: 81 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+los languidecient se arrastr por la vid los languidecient sin gan ni med van por las call com zombi mod van por las call con sus suen etern languidecient languidecient perd la pasion languidecient mir television tod la madrug mir television sin hac nad se levant tard se acuest tempran... (total: 81 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+lo languidecient se arrastran por lo vido lo languidecient sin gana ni medido van por la call como zombi moderno van por la call con su sueno eterno languidecient languidecient perdieron lo pasion languidecient miran television todo lo madrugado miran television sin hacer nado se levantan tarde se acuestan temprano... (total: 81 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 81
+• Vocabulario original: 46
+• Vocabulario stemmed: 46
+• Vocabulario lemmatized: 45
