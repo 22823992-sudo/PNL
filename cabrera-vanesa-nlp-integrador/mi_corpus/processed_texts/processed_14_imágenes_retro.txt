@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+me gusta la foto donde salis sonriendo esa que te saque un dia de verano me gusta la foto donde salis corriendo atras de un globo rojo por el parque imagenes retro de mi cabeza imagenes retro de mi tristeza imagenes retro imagenes retro me gusta la foto donde me... (total: 115 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+me gust la fot dond salis sonr esa que te saqu un dia de veran me gust la fot dond salis corr atras de un glob roj por el parqu imagen retr de mi cabez imagen retr de mi tristez imagen retr imagen retr me gust la fot dond me... (total: 115 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+me gusto lo foto donde sali sonrer eso que te saque un dio de verano me gusto lo foto donde sali correr atra de un globo rojo por el parque imagen retro de mi cabezo imagen retro de mi tristezo imagen retro imagen retro me gusto lo foto donde me... (total: 115 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 115
+• Vocabulario original: 47
+• Vocabulario stemmed: 46
+• Vocabulario lemmatized: 46

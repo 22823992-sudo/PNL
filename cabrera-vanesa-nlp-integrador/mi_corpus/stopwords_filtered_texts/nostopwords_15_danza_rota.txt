@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• una (4 veces)
+• tu (3 veces)
+• es (3 veces)
+• sin (3 veces)
+• que (2 veces)
+• como (2 veces)
+• me (1 veces)
+• un (1 veces)
+• ni (1 veces)
+• son (1 veces)
+• no (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+danza danza rota lleva ningun lado danza danza rota disco rayado giras ton
+ritmo compas giras loca puede parar danza rota danza rota danza danza rota
+danza rota total 107
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 23
+• Tokens filtrados: 30
+• Vocabulario original: 28
+• Vocabulario filtrado: 16
+• Porcentaje removido: 43.4%

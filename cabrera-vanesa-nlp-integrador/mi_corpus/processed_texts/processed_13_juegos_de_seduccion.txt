@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+no se si vos te das cuenta de que me estas matando lento jugando juegos de seduccion con mi pobre corazon primero te acercas un poco despues te alejas de nuevo yo que soy un ser humano no entiendo este juego juegos de seduccion me tienen mal juegos de seduccion... (total: 116 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+no se si vos te das cuent de que me estas mat lent jug jueg de seduccion con mi pobr corazon primer te acerc un poc despu te alej de nuev yo que soy un ser human no entiend este jueg jueg de seduccion me tien mal jueg de seduccion... (total: 116 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+no se si vo te da cuento de que me esta matar lento jugar juego de seduccion con mi pobre corazon primero te acerca un poco despu te aleja de nuevo yo que soy un ser humano no enter este juego juego de seduccion me tienen mal juego de seduccion... (total: 116 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 116
+• Vocabulario original: 57
+• Vocabulario stemmed: 55
+• Vocabulario lemmatized: 54

@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+chocolate frutillas champagne caviar son todos afrodisiacos supongo que lo sabras supongo que lo sabras pero nada es como tu mirada pero nada es como tu mirada directo mi corazon directo mi corazon libros de poesia musica velas son todos afrodisiacos segun dicen las revistas segun dicen las revistas pero... (total: 85 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+chocolat frutill champagn cavi son tod afrodisiac supong que lo sabr supong que lo sabr per nad es com tu mir per nad es com tu mir direct mi corazon direct mi corazon libr de poesi music vel son tod afrodisiac segun dic las revist segun dic las revist per... (total: 85 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+chocolate frutilla champagne caviar son todo afrodisiaco supongo que lo sabra supongo que lo sabra pero nado es como tu mirado pero nado es como tu mirado directo mi corazon directo mi corazon libro de poesio musico vela son todo afrodisiaco segun dicen la revista segun dicen la revista pero... (total: 85 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 85
+• Vocabulario original: 33
+• Vocabulario stemmed: 32
+• Vocabulario lemmatized: 32

@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+yo ya no se que signo sos cambias como las estaciones yo ya no se que signo sos regis mis emociones un dia sos como el fuego al otro como el agua un dia me tenes ciego al otro me ensanas signos signos en el aire signos signos por todas... (total: 97 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+yo ya no se que sign sos cambi com las estacion yo ya no se que sign sos regis mis emocion un dia sos com el fueg al otro com el agu un dia me ten cieg al otro me ensan sign sign en el air sign sign por tod... (total: 97 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+yo yo no se que signo so cambia como la estacion yo yo no se que signo so regi mi emocion un dio so como el fuego al otro como el aguo un dio me ten ciego al otro me ensana signo signo en el aire signo signo por toda... (total: 97 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 97
+• Vocabulario original: 48
+• Vocabulario stemmed: 47
+• Vocabulario lemmatized: 45

@@ -1,0 +1,297 @@
+======================================================================
+REPORTE DE LIMPIEZA - CARACTERES ESPECIALES
+CORPUS SODA STEREO - Procesamiento de Lenguaje Natural
+======================================================================
+
+📋 RESUMEN EJECUTIVO
+--------------------
+• Archivos procesados: 37
+• Total caracteres especiales eliminados: 374
+• Promedio por canción: 10.11
+• Canciones que tenían caracteres especiales: 37
+
+🔧 TÉCNICA APLICADA
+--------------------
+• Método: Reemplazo directo usando diccionario de mapeo
+• Objetivo: Normalización de caracteres acentuados y diéresis
+• Justificación: Mejora consistencia para análisis NLP
+
+📝 DICCIONARIO DE REEMPLAZO UTILIZADO
+----------------------------------------
+   'À' → 'a'
+   'Á' → 'a'
+   'Â' → 'a'
+   'Ä' → 'a'
+   'Ç' → 'c'
+   'È' → 'e'
+   'É' → 'e'
+   'Ê' → 'e'
+   'Ë' → 'e'
+   'Ì' → 'i'
+   'Í' → 'i'
+   'Î' → 'i'
+   'Ï' → 'i'
+   'Ñ' → 'n'
+   'Ò' → 'o'
+   'Ó' → 'o'
+   'Ô' → 'o'
+   'Ö' → 'o'
+   'Ù' → 'u'
+   'Ú' → 'u'
+   'Û' → 'u'
+   'Ü' → 'u'
+   'à' → 'a'
+   'á' → 'a'
+   'â' → 'a'
+   'ä' → 'a'
+   'ç' → 'c'
+   'è' → 'e'
+   'é' → 'e'
+   'ê' → 'e'
+   'ë' → 'e'
+   'ì' → 'i'
+   'í' → 'i'
+   'î' → 'i'
+   'ï' → 'i'
+   'ñ' → 'n'
+   'ò' → 'o'
+   'ó' → 'o'
+   'ô' → 'o'
+   'ö' → 'o'
+   'ù' → 'u'
+   'ú' → 'u'
+   'û' → 'u'
+   'ü' → 'u'
+
+📊 RESULTADOS DETALLADOS POR CANCIÓN
+----------------------------------------
+
+🎵 Un misil en mi placard (1984)
+    📁 Archivo: 01_un_misil_en_mi_placard.txt
+    🔤 Caracteres especiales eliminados: 12
+    📝 Caracteres encontrados: á, é, í, ó
+    📏 Longitud final: 553 caracteres
+
+🎵 Te hacen falta vitaminas (1984)
+    📁 Archivo: 02_te_hacen_falta_vitaminas.txt
+    🔤 Caracteres especiales eliminados: 12
+    📝 Caracteres encontrados: á, é, í
+    📏 Longitud final: 683 caracteres
+
+🎵 Mi novia tiene biceps (1984)
+    📁 Archivo: 03_mi_novia_tiene_biceps.txt
+    🔤 Caracteres especiales eliminados: 22
+    📝 Caracteres encontrados: á, í, ñ
+    📏 Longitud final: 776 caracteres
+
+🎵 Trátame suavemente (1984)
+    📁 Archivo: 04_trátame_suavemente.txt
+    🔤 Caracteres especiales eliminados: 10
+    📝 Caracteres encontrados: á, ñ
+    📏 Longitud final: 695 caracteres
+
+🎵 Disco Eterno (1984)
+    📁 Archivo: 05_disco_eterno.txt
+    🔤 Caracteres especiales eliminados: 4
+    📝 Caracteres encontrados: ú
+    📏 Longitud final: 519 caracteres
+
+🎵 Ni un segundo (1984)
+    📁 Archivo: 06_ni_un_segundo.txt
+    🔤 Caracteres especiales eliminados: 8
+    📝 Caracteres encontrados: é
+    📏 Longitud final: 521 caracteres
+
+🎵 Afrodisíacos (1984)
+    📁 Archivo: 07_afrodisíacos.txt
+    🔤 Caracteres especiales eliminados: 18
+    📝 Caracteres encontrados: á, í, ó, ú
+    📏 Longitud final: 532 caracteres
+
+🎵 Dietético (1984)
+    📁 Archivo: 08_dietetico.txt
+    🔤 Caracteres especiales eliminados: 14
+    📝 Caracteres encontrados: é, í, ó
+    📏 Longitud final: 503 caracteres
+
+🎵 El tiempo es dinero (1984)
+    📁 Archivo: 09_el_tiempo_es_dinero.txt
+    🔤 Caracteres especiales eliminados: 2
+    📝 Caracteres encontrados: á, ó
+    📏 Longitud final: 512 caracteres
+
+🎵 Por qué no puedo ser del jet set? (1984)
+    📁 Archivo: 10_por_que_no_puedo_ser_del_jet_set.txt
+    🔤 Caracteres especiales eliminados: 14
+    📝 Caracteres encontrados: é, í
+    📏 Longitud final: 718 caracteres
+
+🎵 Cuando pase el temblor (1985)
+    📁 Archivo: 11_cuando_pase_el_temblor.txt
+    🔤 Caracteres especiales eliminados: 5
+    📝 Caracteres encontrados: á, í, ñ
+    📏 Longitud final: 641 caracteres
+
+🎵 Nada personal (1985)
+    📁 Archivo: 12_nada_personal.txt
+    🔤 Caracteres especiales eliminados: 2
+    📝 Caracteres encontrados: á, í
+    📏 Longitud final: 477 caracteres
+
+🎵 Juegos de seducción (1985)
+    📁 Archivo: 13_juegos_de_seduccion.txt
+    🔤 Caracteres especiales eliminados: 21
+    📝 Caracteres encontrados: á, é, í, ó, ñ
+    📏 Longitud final: 623 caracteres
+
+🎵 Imágenes retro (1985)
+    📁 Archivo: 14_imágenes_retro.txt
+    🔤 Caracteres especiales eliminados: 19
+    📝 Caracteres encontrados: á, é, í
+    📏 Longitud final: 628 caracteres
+
+🎵 Danza rota (1985)
+    📁 Archivo: 15_danza_rota.txt
+    🔤 Caracteres especiales eliminados: 7
+    📝 Caracteres encontrados: á, ú
+    📏 Longitud final: 526 caracteres
+
+🎵 Estoy azulado (1985)
+    📁 Archivo: 16_estoy_azulado.txt
+    🔤 Caracteres especiales eliminados: 3
+    📝 Caracteres encontrados: í, ñ
+    📏 Longitud final: 449 caracteres
+
+🎵 Observándonos (1985)
+    📁 Archivo: 17_observándonos.txt
+    🔤 Caracteres especiales eliminados: 20
+    📝 Caracteres encontrados: á, í, ó
+    📏 Longitud final: 594 caracteres
+
+🎵 Ecos (1985)
+    📁 Archivo: 18_ecos.txt
+    🔤 Caracteres especiales eliminados: 3
+    📝 Caracteres encontrados: í, ú
+    📏 Longitud final: 504 caracteres
+
+🎵 Si no fuera por (1985)
+    📁 Archivo: 19_si_no_fuera_por.txt
+    🔤 Caracteres especiales eliminados: 5
+    📝 Caracteres encontrados: á, í
+    📏 Longitud final: 649 caracteres
+
+🎵 Sin sobresaltos (1986)
+    📁 Archivo: 20_sin_sobresaltos.txt
+    🔤 Caracteres especiales eliminados: 6
+    📝 Caracteres encontrados: á, ñ
+    📏 Longitud final: 630 caracteres
+
+🎵 En camino (1986)
+    📁 Archivo: 21_en_camino.txt
+    🔤 Caracteres especiales eliminados: 12
+    📝 Caracteres encontrados: á, é, í, ó, ñ
+    📏 Longitud final: 595 caracteres
+
+🎵 Final caja negra (1986)
+    📁 Archivo: 22_final_caja_negra.txt
+    🔤 Caracteres especiales eliminados: 5
+    📝 Caracteres encontrados: é, ó, ú
+    📏 Longitud final: 527 caracteres
+
+🎵 Prófugos (1986)
+    📁 Archivo: 23_profugos.txt
+    🔤 Caracteres especiales eliminados: 14
+    📝 Caracteres encontrados: á, ó
+    📏 Longitud final: 561 caracteres
+
+🎵 Persiana americana (1986)
+    📁 Archivo: 24_persiana_americana.txt
+    🔤 Caracteres especiales eliminados: 3
+    📝 Caracteres encontrados: á, í, ñ
+    📏 Longitud final: 569 caracteres
+
+🎵 Signos (1986)
+    📁 Archivo: 25_signos.txt
+    🔤 Caracteres especiales eliminados: 11
+    📝 Caracteres encontrados: á, é, í, ó, ñ
+    📏 Longitud final: 506 caracteres
+
+🎵 El rito (1986)
+    📁 Archivo: 26_el_rito.txt
+    🔤 Caracteres especiales eliminados: 2
+    📝 Caracteres encontrados: ó
+    📏 Longitud final: 575 caracteres
+
+🎵 No existes (1986)
+    📁 Archivo: 27_no_existes.txt
+    🔤 Caracteres especiales eliminados: 10
+    📝 Caracteres encontrados: é, í
+    📏 Longitud final: 545 caracteres
+
+🎵 Día común (1988)
+    📁 Archivo: 28_día_común.txt
+    🔤 Caracteres especiales eliminados: 25
+    📝 Caracteres encontrados: í, ú
+    📏 Longitud final: 556 caracteres
+
+🎵 En la ciudad de la furia (1988)
+    📁 Archivo: 29_en_la_ciudad_de_la_furia.txt
+    🔤 Caracteres especiales eliminados: 1
+    📝 Caracteres encontrados: á
+    📏 Longitud final: 598 caracteres
+
+🎵 Lo que sangra (1988)
+    📁 Archivo: 30_lo_que_sangra.txt
+    🔤 Caracteres especiales eliminados: 6
+    📝 Caracteres encontrados: á, é, í, ó, ú
+    📏 Longitud final: 601 caracteres
+
+🎵 Corazón delator (1988)
+    📁 Archivo: 31_corazon_delator.txt
+    🔤 Caracteres especiales eliminados: 13
+    📝 Caracteres encontrados: é, í, ó, ú
+    📏 Longitud final: 550 caracteres
+
+🎵 Sobredosis de TV (1988)
+    📁 Archivo: 32_sobredosis_de_tv.txt
+    🔤 Caracteres especiales eliminados: 10
+    📝 Caracteres encontrados: á, é
+    📏 Longitud final: 560 caracteres
+
+🎵 En el borde (1988)
+    📁 Archivo: 33_en_el_borde.txt
+    🔤 Caracteres especiales eliminados: 16
+    📝 Caracteres encontrados: á, é, í, ó
+    📏 Longitud final: 582 caracteres
+
+🎵 Picnic en el 4to B (1988)
+    📁 Archivo: 34_picnic_en_el_4to_b.txt
+    🔤 Caracteres especiales eliminados: 11
+    📝 Caracteres encontrados: á, é, í, ú
+    📏 Longitud final: 579 caracteres
+
+🎵 El ritmo de tus ojos (1988)
+    📁 Archivo: 35_el_ritmo_de_tus_ojos.txt
+    🔤 Caracteres especiales eliminados: 9
+    📝 Caracteres encontrados: á, ó, ñ
+    📏 Longitud final: 566 caracteres
+
+🎵 Terapia de amor intensiva (1988)
+    📁 Archivo: 36_terapia_de_amor_intensiva.txt
+    🔤 Caracteres especiales eliminados: 10
+    📝 Caracteres encontrados: é, í, ó, ú, ñ
+    📏 Longitud final: 727 caracteres
+
+🎵 Los languidecientes (1988)
+    📁 Archivo: 37_los_languidecientes.txt
+    🔤 Caracteres especiales eliminados: 9
+    📝 Caracteres encontrados: é, ó, ú, ñ
+    📏 Longitud final: 596 caracteres
+
+======================================================================
+🎯 CONCLUSIONES
+======================================================================
+✅ Corpus completamente normalizado sin caracteres especiales
+✅ Textos optimizados para algoritmos de NLP estándar
+✅ Consistencia mejorada en tokenización y análisis
+✅ Preservación del contenido semántico original

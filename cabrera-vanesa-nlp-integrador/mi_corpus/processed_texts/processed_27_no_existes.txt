@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+para mi ya no existes sos un fantasma en mi memoria para mi ya no existes borraste toda tu historia te hice desaparecer de todas mis fotografias te hice desaparecer de todas mis fantasias no existes no existes en mi nueva realidad no existes no existes ya no tenes identidad... (total: 97 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+par mi ya no exist sos un fantasm en mi memori par mi ya no exist borr tod tu histori te hic desaparec de tod mis fotografi te hic desaparec de tod mis fantasi no exist no exist en mi nuev realid no exist no exist ya no ten ident... (total: 97 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+paro mi yo no exist so un fantasmo en mi memorio paro mi yo no exist borraste todo tu historio te hice desaparecer de toda mi fotografia te hice desaparecer de toda mi fantasia no exist no exist en mi nuevo realidad no exist no exist yo no ten identidad... (total: 97 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 97
+• Vocabulario original: 45
+• Vocabulario stemmed: 42
+• Vocabulario lemmatized: 42

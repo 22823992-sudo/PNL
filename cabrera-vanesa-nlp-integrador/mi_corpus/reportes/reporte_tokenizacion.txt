@@ -1,0 +1,53 @@
+======================================================================
+REPORTE DE TOKENIZACIÓN - CORPUS SODA STEREO
+======================================================================
+
+📋 RESUMEN
+Canciones tokenizadas: 37
+Total de tokens: 4,090
+Promedio tokens/canción: 110.5
+
+🔧 PROCESO APLICADO
+----------------------------------------
+Tokenización por espacios en blanco (split())
+Cada token guardado en línea separada
+
+📊 DETALLE POR CANCIÓN
+----------------------------------------
+Un misil en mi placard (1984): 119 tokens
+Te hacen falta vitaminas (1984): 128 tokens
+Mi novia tiene biceps (1984): 155 tokens
+Trátame suavemente (1984): 130 tokens
+Disco Eterno (1984): 106 tokens
+Ni un segundo (1984): 106 tokens
+Afrodisíacos (1984): 91 tokens
+Dietético (1984): 93 tokens
+El tiempo es dinero (1984): 106 tokens
+Por qué no puedo ser del jet set? (1984): 161 tokens
+Cuando pase el temblor (1985): 126 tokens
+Nada personal (1985): 81 tokens
+Juegos de seducción (1985): 121 tokens
+Imágenes retro (1985): 115 tokens
+Danza rota (1985): 110 tokens
+Estoy azulado (1985): 78 tokens
+Observándonos (1985): 97 tokens
+Ecos (1985): 100 tokens
+Si no fuera por (1985): 136 tokens
+Sin sobresaltos (1986): 103 tokens
+En camino (1986): 120 tokens
+Final caja negra (1986): 92 tokens
+Prófugos (1986): 96 tokens
+Persiana americana (1986): 97 tokens
+Signos (1986): 98 tokens
+El rito (1986): 115 tokens
+No existes (1986): 97 tokens
+Día común (1988): 108 tokens
+En la ciudad de la furia (1988): 127 tokens
+Lo que sangra (1988): 119 tokens
+Corazón delator (1988): 98 tokens
+Sobredosis de TV (1988): 99 tokens
+En el borde (1988): 119 tokens
+Picnic en el 4to B (1988): 119 tokens
+El ritmo de tus ojos (1988): 121 tokens
+Terapia de amor intensiva (1988): 122 tokens
+Los languidecientes (1988): 81 tokens

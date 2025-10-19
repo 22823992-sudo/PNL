@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• no (7 veces)
+• mi (4 veces)
+• ya (3 veces)
+• para (2 veces)
+• en (2 veces)
+• te (2 veces)
+• de (2 veces)
+• mis (2 veces)
+• un (1 veces)
+• toda (1 veces)
+• tu (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+existes sos fantasma memoria existes borraste historia hice desaparecer todas
+fotografias hice desaparecer todas fantasias existes existes nueva realidad
+existes existes tenes identidad total 97
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 28
+• Tokens filtrados: 25
+• Vocabulario original: 29
+• Vocabulario filtrado: 17
+• Porcentaje removido: 52.8%

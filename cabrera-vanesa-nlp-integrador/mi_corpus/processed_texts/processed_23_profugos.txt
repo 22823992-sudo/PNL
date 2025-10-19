@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+somos profugos del amor escapando sin destino somos profugos del dolor buscando otro camino corremos por las calles como ladrones de corazones corremos entre las sombras huyendo de nuestros errores profugos profugos de lo que fuimos ayer profugos profugos sin saber donde ir no queremos que nos atrapen los recuerdos... (total: 94 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+som profug del amor escap sin destin som profug del dolor busc otro camin corr por las call com ladron de corazon corr entre las sombr huyend de nuestr error profug profug de lo que fuim ayer profug profug sin sab dond ir no quer que nos atrap los recuerd... (total: 94 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+somo profugo del amor escapar sin destino somo profugo del dolor buscar otro camino corremo por la call como ladron de corazon corremo entre la sombra huyendo de nuestro error profugo profugo de lo que fuimo ayer profugo profugo sin saber donde ir no quer que no atrapen lo recuerdo... (total: 94 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 94
+• Vocabulario original: 53
+• Vocabulario stemmed: 52
+• Vocabulario lemmatized: 49

@@ -1,0 +1,35 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• no (4 veces)
+• por (3 veces)
+• te (3 veces)
+• ciertas (2 veces)
+• tienes (2 veces)
+• que (2 veces)
+• ahi (2 veces)
+• con (2 veces)
+• de (2 veces)
+• falta (2 veces)
+• ya (2 veces)
+• se (1 veces)
+• yo (1 veces)
+• las (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+noches buena cara noches buena cara sera andas pinta cansada andas pinta
+cansada creo sera hacen vitaminas brillan pupilas hacen vitaminas total 128
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 30
+• Tokens filtrados: 23
+• Vocabulario original: 29
+• Vocabulario filtrado: 14
+• Porcentaje removido: 56.6%
