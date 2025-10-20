@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+hoy hay picnic en el todos estan invitados hoy hay picnic en el los problemas han quedado de lado trae tu guitarra trae tu alegria trae tu guitarra para cantar todo el dia picnic en el picnic en el olvidate de todo veni compartir los vecinos se quejan del ruido... (total: 99 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+hoy hay picnic en el tod estan invit hoy hay picnic en el los problem han qued de lad tra tu guitarr tra tu alegri tra tu guitarr par cant tod el dia picnic en el picnic en el olvidat de tod veni compart los vecin se quej del ruid... (total: 99 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+hoy hay picnic en el todo estan invitado hoy hay picnic en el lo problema han quedar de lar trae tu guitarro trae tu alegrio trae tu guitarro paro cantar todo el dio picnic en el picnic en el olvidate de todo veni compartir lo vecino se quejan del ruer... (total: 99 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 99
+• Vocabulario original: 50
+• Vocabulario stemmed: 49
+• Vocabulario lemmatized: 48

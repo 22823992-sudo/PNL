@@ -1,0 +1,35 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• mi (3 veces)
+• un (3 veces)
+• que (3 veces)
+• cuando (3 veces)
+• es (2 veces)
+• todo (2 veces)
+• no (2 veces)
+• lo (1 veces)
+• se (1 veces)
+• te (1 veces)
+• como (1 veces)
+• en (1 veces)
+• vas (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+corazon delator cuenta siento corazon delator guarda ningun secreto late fuerte
+mentis acelera veo late fuerte mentis tambor pecho corazon delator sabes callar
+corazon delator contar total 96
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 25
+• Tokens filtrados: 28
+• Vocabulario original: 33
+• Vocabulario filtrado: 19
+• Porcentaje removido: 47.2%

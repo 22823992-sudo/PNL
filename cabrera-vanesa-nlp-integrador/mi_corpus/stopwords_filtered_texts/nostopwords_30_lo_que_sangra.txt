@@ -1,0 +1,36 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• lo (6 veces)
+• que (6 veces)
+• solo (2 veces)
+• el (2 veces)
+• las (2 veces)
+• no (2 veces)
+• pero (2 veces)
+• de (1 veces)
+• en (1 veces)
+• nada (1 veces)
+• mas (1 veces)
+• se (1 veces)
+• con (1 veces)
+• del (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+importa sangra duele verdad importa sangra alma heridas superficiales curan
+tiempo heridas superficiales dejan sufrimiento sangra adentro sangra corazon
+sangra adentro total 113
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 30
+• Tokens filtrados: 23
+• Vocabulario original: 30
+• Vocabulario filtrado: 15
+• Porcentaje removido: 56.6%

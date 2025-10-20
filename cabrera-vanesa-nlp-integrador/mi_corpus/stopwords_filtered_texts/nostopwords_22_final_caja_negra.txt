@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• los (3 veces)
+• como (2 veces)
+• una (2 veces)
+• de (2 veces)
+• la (2 veces)
+• que (2 veces)
+• tengo (2 veces)
+• todos (1 veces)
+• tiene (1 veces)
+• todo (1 veces)
+• lo (1 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+caja negra guardo secretos caja negra despues accidentes nadie puede abrirme
+nadie llave nadie puede leerme mensajes guardo caja negra final historia caja
+negra ultima memoria dentro guardado paso dentro sellado total 92
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 20
+• Tokens filtrados: 33
+• Vocabulario original: 34
+• Vocabulario filtrado: 22
+• Porcentaje removido: 37.7%

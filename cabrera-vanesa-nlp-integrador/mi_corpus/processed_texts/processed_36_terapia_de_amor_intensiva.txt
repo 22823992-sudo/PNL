@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+necesito terapia de amor intensiva para curar este corazon enfermo necesito terapia de amor intensiva antes de que pierda el gobierno doctor diagnostiqueme este mal que me consume doctor receteme un amor que me cure terapia de amor intensiva terapia de amor intensiva es lo unico que me puede salvar... (total: 122 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+necesit terapi de amor intens par cur este corazon enferm necesit terapi de amor intens antes de que pierd el gobiern doctor diagnostiquem este mal que me consum doctor recetem un amor que me cur terapi de amor intens terapi de amor intens es lo unic que me pued salv... (total: 122 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+necesito terapio de amor intensivo paro curar este corazon enfermo necesito terapio de amor intensivo ant de que pierdo el gobierno doctor diagnostiqueme este mal que me consume doctor receteme un amor que me cure terapio de amor intensivo terapio de amor intensivo es lo unico que me puede salvar... (total: 122 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 122
+• Vocabulario original: 53
+• Vocabulario stemmed: 51
+• Vocabulario lemmatized: 51

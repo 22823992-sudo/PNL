@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+estoy azulado como el fondo del mar estoy azulado no me pude curar de esta melancolia que me invade por las noches de esta melancolia que no me deja respirar estoy azulado como un cielo de invierno estoy azulado desde hace tiempo con esta tristeza que me acompana todas partes... (total: 77 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+estoy azul com el fond del mar estoy azul no me pud cur de esta melancoli que me invad por las noch de esta melancoli que no me dej respir estoy azul com un ciel de inviern estoy azul desd hac tiemp con esta tristez que me acompan tod part... (total: 77 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+estoy azular como el fondo del mar estoy azular no me pude curar de esto melancolio que me invade por la noch de esto melancolio que no me dejo respirar estoy azular como un cielo de invierno estoy azular desde hace tiempo con esto tristezo que me acompano toda part... (total: 77 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 77
+• Vocabulario original: 37
+• Vocabulario stemmed: 37
+• Vocabulario lemmatized: 37

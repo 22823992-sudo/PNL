@@ -1,0 +1,353 @@
+================================================================================
+REPORTE ACADÉMICO - MANEJO DE STOP WORDS
+CORPUS SODA STEREO - Procesamiento de Lenguaje Natural
+================================================================================
+
+📋 RESUMEN EJECUTIVO
+--------------------
+• Corpus procesado: 37 canciones
+• Total stop words definidas: 372
+• Promedio tokens removidos: 51.56%
+• Reducción promedio vocabulario: 44.60%
+• Total stop words removidas del corpus: 1,011
+
+🔧 METODOLOGÍA APLICADA
+-------------------------
+
+1️⃣ DEFINICIÓN DE STOP WORDS
+   🔤 NLTK Español estándar: 313 palabras
+      • Artículos, preposiciones, pronombres
+      • Conjunciones y conectores básicos
+      • Verbos auxiliares de alta frecuencia
+
+   🎯 Stop words proporcionadas: 95 palabras
+      • Variantes dialectales del español rioplatense
+      • Formas contractas y coloquiales
+      • Conectores específicos del dominio
+
+   🎵 Stop words musicales: 21 palabras
+      • Interjecciones lírico-musicales
+      • Onomatopeyas y expresiones vocales
+      • Rellenos melódicos sin contenido semántico
+
+2️⃣ PROCESO DE FILTRADO
+   📝 Input: Tokens de archivos processed_texts/
+   🔍 Algoritmo: Filtrado por coincidencia exacta (case-insensitive)
+   💾 Output: Tokens filtrados en stopwords_filtered_texts/
+
+📊 RESULTADOS DETALLADOS POR CANCIÓN
+----------------------------------------
+
+🎵 Un misil en mi placard (1984)
+    📁 Archivo: 01_un_misil_en_mi_placard.txt
+    📊 Tokens originales: 53 (37 únicos)
+    🚫 Stop words removidas: 35 (66.0%)
+    ✅ Tokens filtrados: 18 (15 únicos)
+    📉 Reducción vocabulario: 59.5%
+
+🎵 Te hacen falta vitaminas (1984)
+    📁 Archivo: 02_te_hacen_falta_vitaminas.txt
+    📊 Tokens originales: 53 (29 únicos)
+    🚫 Stop words removidas: 30 (56.6%)
+    ✅ Tokens filtrados: 23 (14 únicos)
+    📉 Reducción vocabulario: 51.7%
+
+🎵 Mi novia tiene biceps (1984)
+    📁 Archivo: 03_mi_novia_tiene_biceps.txt
+    📊 Tokens originales: 53 (37 únicos)
+    🚫 Stop words removidas: 29 (54.7%)
+    ✅ Tokens filtrados: 24 (19 únicos)
+    📉 Reducción vocabulario: 48.6%
+
+🎵 Trátame suavemente (1984)
+    📁 Archivo: 04_trátame_suavemente.txt
+    📊 Tokens originales: 53 (46 únicos)
+    🚫 Stop words removidas: 28 (52.8%)
+    ✅ Tokens filtrados: 25 (22 únicos)
+    📉 Reducción vocabulario: 52.2%
+
+🎵 Disco Eterno (1984)
+    📁 Archivo: 05_disco_eterno.txt
+    📊 Tokens originales: 53 (25 únicos)
+    🚫 Stop words removidas: 25 (47.2%)
+    ✅ Tokens filtrados: 28 (14 únicos)
+    📉 Reducción vocabulario: 44.0%
+
+🎵 Ni un segundo (1984)
+    📁 Archivo: 06_ni_un_segundo.txt
+    📊 Tokens originales: 53 (20 únicos)
+    🚫 Stop words removidas: 31 (58.5%)
+    ✅ Tokens filtrados: 22 (10 únicos)
+    📉 Reducción vocabulario: 50.0%
+
+🎵 Afrodisíacos (1984)
+    📁 Archivo: 07_afrodisíacos.txt
+    📊 Tokens originales: 53 (32 únicos)
+    🚫 Stop words removidas: 25 (47.2%)
+    ✅ Tokens filtrados: 28 (19 únicos)
+    📉 Reducción vocabulario: 40.6%
+
+🎵 Dietético (1984)
+    📁 Archivo: 08_dietetico.txt
+    📊 Tokens originales: 53 (26 únicos)
+    🚫 Stop words removidas: 28 (52.8%)
+    ✅ Tokens filtrados: 25 (14 únicos)
+    📉 Reducción vocabulario: 46.2%
+
+🎵 El tiempo es dinero (1984)
+    📁 Archivo: 09_el_tiempo_es_dinero.txt
+    📊 Tokens originales: 53 (28 únicos)
+    🚫 Stop words removidas: 27 (50.9%)
+    ✅ Tokens filtrados: 26 (14 únicos)
+    📉 Reducción vocabulario: 50.0%
+
+🎵 Por qué no puedo ser del jet set? (1984)
+    📁 Archivo: 10_por_que_no_puedo_ser_del_jet_set.txt
+    📊 Tokens originales: 53 (31 únicos)
+    🚫 Stop words removidas: 33 (62.3%)
+    ✅ Tokens filtrados: 20 (16 únicos)
+    📉 Reducción vocabulario: 48.4%
+
+🎵 Cuando pase el temblor (1985)
+    📁 Archivo: 11_cuando_pase_el_temblor.txt
+    📊 Tokens originales: 53 (35 únicos)
+    🚫 Stop words removidas: 27 (50.9%)
+    ✅ Tokens filtrados: 26 (21 únicos)
+    📉 Reducción vocabulario: 40.0%
+
+🎵 Nada personal (1985)
+    📁 Archivo: 12_nada_personal.txt
+    📊 Tokens originales: 53 (25 únicos)
+    🚫 Stop words removidas: 27 (50.9%)
+    ✅ Tokens filtrados: 26 (16 únicos)
+    📉 Reducción vocabulario: 36.0%
+
+🎵 Juegos de seducción (1985)
+    📁 Archivo: 13_juegos_de_seduccion.txt
+    📊 Tokens originales: 53 (39 únicos)
+    🚫 Stop words removidas: 27 (50.9%)
+    ✅ Tokens filtrados: 26 (22 únicos)
+    📉 Reducción vocabulario: 43.6%
+
+🎵 Imágenes retro (1985)
+    📁 Archivo: 14_imágenes_retro.txt
+    📊 Tokens originales: 53 (30 únicos)
+    🚫 Stop words removidas: 24 (45.3%)
+    ✅ Tokens filtrados: 29 (18 únicos)
+    📉 Reducción vocabulario: 40.0%
+
+🎵 Danza rota (1985)
+    📁 Archivo: 15_danza_rota.txt
+    📊 Tokens originales: 53 (28 únicos)
+    🚫 Stop words removidas: 23 (43.4%)
+    ✅ Tokens filtrados: 30 (16 únicos)
+    📉 Reducción vocabulario: 42.9%
+
+🎵 Estoy azulado (1985)
+    📁 Archivo: 16_estoy_azulado.txt
+    📊 Tokens originales: 53 (35 únicos)
+    🚫 Stop words removidas: 29 (54.7%)
+    ✅ Tokens filtrados: 24 (20 únicos)
+    📉 Reducción vocabulario: 42.9%
+
+🎵 Observándonos (1985)
+    📁 Archivo: 17_observándonos.txt
+    📊 Tokens originales: 53 (34 únicos)
+    🚫 Stop words removidas: 24 (45.3%)
+    ✅ Tokens filtrados: 29 (21 únicos)
+    📉 Reducción vocabulario: 38.2%
+
+🎵 Ecos (1985)
+    📁 Archivo: 18_ecos.txt
+    📊 Tokens originales: 53 (32 únicos)
+    🚫 Stop words removidas: 27 (50.9%)
+    ✅ Tokens filtrados: 26 (19 únicos)
+    📉 Reducción vocabulario: 40.6%
+
+🎵 Si no fuera por (1985)
+    📁 Archivo: 19_si_no_fuera_por.txt
+    📊 Tokens originales: 53 (29 únicos)
+    🚫 Stop words removidas: 38 (71.7%)
+    ✅ Tokens filtrados: 15 (15 únicos)
+    📉 Reducción vocabulario: 48.3%
+
+🎵 Sin sobresaltos (1986)
+    📁 Archivo: 20_sin_sobresaltos.txt
+    📊 Tokens originales: 53 (30 únicos)
+    🚫 Stop words removidas: 24 (45.3%)
+    ✅ Tokens filtrados: 29 (17 únicos)
+    📉 Reducción vocabulario: 43.3%
+
+🎵 En camino (1986)
+    📁 Archivo: 21_en_camino.txt
+    📊 Tokens originales: 53 (27 únicos)
+    🚫 Stop words removidas: 32 (60.4%)
+    ✅ Tokens filtrados: 21 (14 únicos)
+    📉 Reducción vocabulario: 48.1%
+
+🎵 Final caja negra (1986)
+    📁 Archivo: 22_final_caja_negra.txt
+    📊 Tokens originales: 53 (34 únicos)
+    🚫 Stop words removidas: 20 (37.7%)
+    ✅ Tokens filtrados: 33 (22 únicos)
+    📉 Reducción vocabulario: 35.3%
+
+🎵 Prófugos (1986)
+    📁 Archivo: 23_profugos.txt
+    📊 Tokens originales: 53 (40 únicos)
+    🚫 Stop words removidas: 25 (47.2%)
+    ✅ Tokens filtrados: 28 (22 únicos)
+    📉 Reducción vocabulario: 45.0%
+
+🎵 Persiana americana (1986)
+    📁 Archivo: 24_persiana_americana.txt
+    📊 Tokens originales: 53 (35 únicos)
+    🚫 Stop words removidas: 23 (43.4%)
+    ✅ Tokens filtrados: 30 (22 únicos)
+    📉 Reducción vocabulario: 37.1%
+
+🎵 Signos (1986)
+    📁 Archivo: 25_signos.txt
+    📊 Tokens originales: 53 (33 únicos)
+    🚫 Stop words removidas: 29 (54.7%)
+    ✅ Tokens filtrados: 24 (17 únicos)
+    📉 Reducción vocabulario: 48.5%
+
+🎵 El rito (1986)
+    📁 Archivo: 26_el_rito.txt
+    📊 Tokens originales: 53 (32 únicos)
+    🚫 Stop words removidas: 28 (52.8%)
+    ✅ Tokens filtrados: 25 (17 únicos)
+    📉 Reducción vocabulario: 46.9%
+
+🎵 No existes (1986)
+    📁 Archivo: 27_no_existes.txt
+    📊 Tokens originales: 53 (29 únicos)
+    🚫 Stop words removidas: 28 (52.8%)
+    ✅ Tokens filtrados: 25 (17 únicos)
+    📉 Reducción vocabulario: 41.4%
+
+🎵 Día común (1988)
+    📁 Archivo: 28_día_común.txt
+    📊 Tokens originales: 53 (33 únicos)
+    🚫 Stop words removidas: 25 (47.2%)
+    ✅ Tokens filtrados: 28 (16 únicos)
+    📉 Reducción vocabulario: 51.5%
+
+🎵 En la ciudad de la furia (1988)
+    📁 Archivo: 29_en_la_ciudad_de_la_furia.txt
+    📊 Tokens originales: 53 (24 únicos)
+    🚫 Stop words removidas: 31 (58.5%)
+    ✅ Tokens filtrados: 22 (10 únicos)
+    📉 Reducción vocabulario: 58.3%
+
+🎵 Lo que sangra (1988)
+    📁 Archivo: 30_lo_que_sangra.txt
+    📊 Tokens originales: 53 (30 únicos)
+    🚫 Stop words removidas: 30 (56.6%)
+    ✅ Tokens filtrados: 23 (15 únicos)
+    📉 Reducción vocabulario: 50.0%
+
+🎵 Corazón delator (1988)
+    📁 Archivo: 31_corazon_delator.txt
+    📊 Tokens originales: 53 (33 únicos)
+    🚫 Stop words removidas: 25 (47.2%)
+    ✅ Tokens filtrados: 28 (19 únicos)
+    📉 Reducción vocabulario: 42.4%
+
+🎵 Sobredosis de TV (1988)
+    📁 Archivo: 32_sobredosis_de_tv.txt
+    📊 Tokens originales: 53 (33 únicos)
+    🚫 Stop words removidas: 22 (41.5%)
+    ✅ Tokens filtrados: 31 (21 únicos)
+    📉 Reducción vocabulario: 36.4%
+
+🎵 En el borde (1988)
+    📁 Archivo: 33_en_el_borde.txt
+    📊 Tokens originales: 53 (29 únicos)
+    🚫 Stop words removidas: 33 (62.3%)
+    ✅ Tokens filtrados: 20 (16 únicos)
+    📉 Reducción vocabulario: 44.8%
+
+🎵 Picnic en el 4to B (1988)
+    📁 Archivo: 34_picnic_en_el_4to_b.txt
+    📊 Tokens originales: 53 (33 únicos)
+    🚫 Stop words removidas: 26 (49.1%)
+    ✅ Tokens filtrados: 27 (20 únicos)
+    📉 Reducción vocabulario: 39.4%
+
+🎵 El ritmo de tus ojos (1988)
+    📁 Archivo: 35_el_ritmo_de_tus_ojos.txt
+    📊 Tokens originales: 53 (28 únicos)
+    🚫 Stop words removidas: 30 (56.6%)
+    ✅ Tokens filtrados: 23 (15 únicos)
+    📉 Reducción vocabulario: 46.4%
+
+🎵 Terapia de amor intensiva (1988)
+    📁 Archivo: 36_terapia_de_amor_intensiva.txt
+    📊 Tokens originales: 53 (31 únicos)
+    🚫 Stop words removidas: 21 (39.6%)
+    ✅ Tokens filtrados: 32 (20 únicos)
+    📉 Reducción vocabulario: 35.5%
+
+🎵 Los languidecientes (1988)
+    📁 Archivo: 37_los_languidecientes.txt
+    📊 Tokens originales: 53 (36 únicos)
+    🚫 Stop words removidas: 22 (41.5%)
+    ✅ Tokens filtrados: 31 (23 únicos)
+    📉 Reducción vocabulario: 36.1%
+
+📈 ANÁLISIS ESTADÍSTICO GLOBAL
+------------------------------
+
+📊 MEDIDAS DE TENDENCIA CENTRAL:
+   • Media % stop words: 51.56%
+   • Mediana % stop words: 50.94%
+   • Desviación estándar: 7.50%
+   • Coeficiente de variación: 14.54%
+
+🔝 TOP 20 STOP WORDS MÁS FRECUENTES:
+-----------------------------------
+Ranking | Palabra      | Frecuencia | Porcentaje | Categoría
+--------|-------------|------------|------------|----------
+      1 | no          |         75 |      7.42% | NLTK
+      2 | que         |         72 |      7.12% | NLTK
+      3 | de          |         68 |      6.73% | NLTK
+      4 | el          |         49 |      4.85% | NLTK
+      5 | me          |         48 |      4.75% | NLTK
+      6 | un          |         40 |      3.96% | NLTK
+      7 | tokens      |         37 |      3.66% | PERS
+      8 | se          |         33 |      3.26% | NLTK
+      9 | en          |         33 |      3.26% | NLTK
+     10 | es          |         30 |      2.97% | NLTK
+     11 | tu          |         29 |      2.87% | NLTK
+     12 | mi          |         29 |      2.87% | NLTK
+     13 | por         |         25 |      2.47% | NLTK
+     14 | sin         |         23 |      2.27% | NLTK
+     15 | la          |         21 |      2.08% | NLTK
+     16 | como        |         20 |      1.98% | NLTK
+     17 | lo          |         20 |      1.98% | NLTK
+     18 | las         |         20 |      1.98% | NLTK
+     19 | los         |         16 |      1.58% | NLTK
+     20 | ya          |         14 |      1.38% | NLTK
+
+================================================================================
+🎯 CONCLUSIONES Y RECOMENDACIONES
+================================================================================
+
+✅ LOGROS METODOLÓGICOS:
+• Implementación de filtrado multicategoría de stop words
+• Adaptación específica al dominio lírico-musical en español
+• Documentación exhaustiva de decisiones metodológicas
+• Validación empírica de la efectividad del filtrado
+
+📈 MÉTRICAS DE CALIDAD ALCANZADAS:
+• Configuración AGRESIVA: Revisar posible sobrefilrado
+• Reducción promedio de vocabulario: 44.6%
+• Consistencia entre canciones: CV = 14.5%
+
+🔍 RECOMENDACIONES PARA ANÁLISIS POSTERIORES:
+• Utilizar tokens filtrados para análisis de frecuencias
+• Aplicar a modelado de tópicos (LDA, NMF)
+• Base optimizada para análisis de similitud semántica
+• Input mejorado para clustering de canciones por contenido

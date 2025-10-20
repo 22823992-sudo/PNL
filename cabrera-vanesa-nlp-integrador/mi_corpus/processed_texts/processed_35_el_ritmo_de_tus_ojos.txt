@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+el ritmo de tus ojos me marca el compas el ritmo de tus ojos no me deja en paz cuando me miras mi corazon se acelera cuando me miras se me va la primavera al ritmo de tus ojos al ritmo de tus ojos bailo esta cancion al ritmo de... (total: 121 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+el ritm de tus ojos me marc el comp el ritm de tus ojos no me dej en paz cuand me mir mi corazon se aceler cuand me mir se me va la primaver al ritm de tus ojos al ritm de tus ojos bail esta cancion al ritm de... (total: 121 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+el ritmo de tu ojo me marco el compa el ritmo de tu ojo no me dejo en paz cuar me mira mi corazon se acelero cuar me mira se me vo lo primavero al ritmo de tu ojo al ritmo de tu ojo bailo esto cancion al ritmo de... (total: 121 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 121
+• Vocabulario original: 41
+• Vocabulario stemmed: 41
+• Vocabulario lemmatized: 41

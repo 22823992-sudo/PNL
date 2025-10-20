@@ -1,0 +1,22 @@
+============================================================
+TEXTO PROCESADO - TOKENIZACIÓN Y NORMALIZACIÓN
+============================================================
+
+📝 TOKENS ORIGINALES:
+--------------------
+mi novia levanta pesas en un gimnasio yo me siento extrano cuando vamos caminando ella me defiende si alguien me quiere pegar mi no me gusta nada que me vengan cuidar mi novia tiene biceps mi novia tiene biceps mi novia tiene biceps mas grandes que los mios todos mis... (total: 146 tokens)
+
+🌱 TOKENS STEMMED:
+------------------
+mi novi levant pes en un gimnasi yo me sient extran cuand vam camin ella me defiend si algui me quier peg mi no me gust nad que me veng cuid mi novi tien biceps mi novi tien biceps mi novi tien biceps mas grand que los mios tod mis... (total: 146 tokens)
+
+📚 TOKENS LEMMATIZED:
+----------------------
+mi novio levanto pesa en un gimnasio yo me siento extrano cuar vamo caminar ello me defiende si alguien me quiere pegar mi no me gusto nado que me vengan cuidar mi novio tiene bicep mi novio tiene bicep mi novio tiene bicep ma grand que lo mio todo mi... (total: 146 tokens)
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 146
+• Vocabulario original: 68
+• Vocabulario stemmed: 67
+• Vocabulario lemmatized: 66

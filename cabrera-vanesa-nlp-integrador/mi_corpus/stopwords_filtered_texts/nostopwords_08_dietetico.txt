@@ -1,0 +1,33 @@
+============================================================
+TOKENS SIN STOP WORDS - CORPUS SODA STEREO
+============================================================
+
+🚫 STOP WORDS REMOVIDAS:
+-------------------------
+• me (4 veces)
+• todo (3 veces)
+• lo (3 veces)
+• que (3 veces)
+• sin (2 veces)
+• el (2 veces)
+• de (2 veces)
+• la (2 veces)
+• es (2 veces)
+• pero (2 veces)
+• no (2 veces)
+• tokens (1 veces)
+
+✅ TOKENS FILTRADOS:
+--------------------
+dulce dietetico amor calorias dulce dietetico sabor melancolia das dulce
+alimenta das dulce alimenta dulce dietetico amor vitaminas dulce dietetico
+gusto amargo rutina total 92
+
+📊 ESTADÍSTICAS:
+---------------
+• Tokens originales: 53
+• Stop words removidas: 28
+• Tokens filtrados: 25
+• Vocabulario original: 26
+• Vocabulario filtrado: 14
+• Porcentaje removido: 52.8%
