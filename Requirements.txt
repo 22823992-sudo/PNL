@@ -1,0 +1,253 @@
+# ====================================
+# Requirements para Proyecto de PNL
+# Natural Language Processing
+# ====================================
+
+# ============ Core Python Libraries ============
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+scipy>=1.10.0,<2.0.0
+
+# ============ NLP Libraries ============
+# NLTK - Natural Language Toolkit
+nltk>=3.8.1
+
+# spaCy - Industrial-strength NLP
+spacy>=3.7.0
+es-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.7.0/es_core_news_sm-3.7.0-py3-none-any.whl
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
+
+# TextBlob - Simplified text processing
+textblob>=0.17.1
+
+# Gensim - Topic modeling and word embeddings
+gensim>=4.3.0
+
+# Pattern - Web mining module
+# pattern>=3.6
+
+# ============ Machine Learning ============
+# Scikit-learn - ML algorithms
+scikit-learn>=1.3.0
+
+# XGBoost - Gradient boosting
+xgboost>=2.0.0
+
+# LightGBM - Gradient boosting framework
+lightgbm>=4.1.0
+
+# ============ Deep Learning ============
+# TensorFlow
+tensorflow>=2.15.0,<3.0.0
+
+# Keras - High-level neural networks API
+keras>=3.0.0
+
+# PyTorch
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# ============ Transformers & Pre-trained Models ============
+# Hugging Face Transformers
+transformers>=4.35.0
+
+# Sentence Transformers - Sentence embeddings
+sentence-transformers>=2.2.0
+
+# Tokenizers - Fast tokenization
+tokenizers>=0.15.0
+
+# ============ Text Processing ============
+# Regular expressions (built-in but listing for clarity)
+regex>=2023.10.3
+
+# Unidecode - ASCII transliterations
+unidecode>=1.3.7
+
+# ftfy - Fixes text for you
+ftfy>=6.1.3
+
+# python-Levenshtein - Fast string matching
+python-Levenshtein>=0.23.0
+
+# fuzzywuzzy - Fuzzy string matching
+fuzzywuzzy>=0.18.0
+
+# ============ Visualization ============
+# Matplotlib - Plotting
+matplotlib>=3.8.0
+
+# Seaborn - Statistical visualization
+seaborn>=0.13.0
+
+# Plotly - Interactive plots
+plotly>=5.18.0
+
+# WordCloud - Word cloud generator
+wordcloud>=1.9.3
+
+# ============ Data Handling ============
+# openpyxl - Excel file handling
+openpyxl>=3.1.2
+
+# xlrd - Excel file reading
+xlrd>=2.0.1
+
+# beautifulsoup4 - Web scraping
+beautifulsoup4>=4.12.2
+
+# lxml - XML/HTML processing
+lxml>=4.9.3
+
+# requests - HTTP library
+requests>=2.31.0
+
+# ============ Jupyter & Notebooks ============
+# Jupyter Notebook
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# JupyterLab
+jupyterlab>=4.0.0
+
+# IPython
+ipython>=8.18.0
+
+# ipywidgets - Interactive widgets
+ipywidgets>=8.1.1
+
+# ============ Progress Bars & Logging ============
+# tqdm - Progress bars
+tqdm>=4.66.0
+
+# loguru - Logging
+loguru>=0.7.2
+
+# ============ Testing ============
+# pytest - Testing framework
+pytest>=7.4.3
+
+# pytest-cov - Coverage plugin
+pytest-cov>=4.1.0
+
+# ============ Code Quality ============
+# black - Code formatter
+black>=23.11.0
+
+# flake8 - Style guide enforcement
+flake8>=6.1.0
+
+# pylint - Code analysis
+pylint>=3.0.0
+
+# isort - Import sorting
+isort>=5.12.0
+
+# mypy - Static type checking
+mypy>=1.7.0
+
+# ============ Utilities ============
+# python-dotenv - Environment variables
+python-dotenv>=1.0.0
+
+# pyyaml - YAML parser
+pyyaml>=6.0.1
+
+# joblib - Lightweight pipelining
+joblib>=1.3.2
+
+# pickle5 - Pickle protocol 5 backport (Python < 3.8)
+# pickle5>=0.0.12
+
+# dill - Extended pickling
+dill>=0.3.7
+
+# ============ Performance ============
+# numba - JIT compiler
+numba>=0.58.1
+
+# Cython - C-extensions for Python
+Cython>=3.0.5
+
+# ============ Web & API ============
+# Flask - Web framework (if needed)
+# flask>=3.0.0
+
+# FastAPI - Modern web framework
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+
+# ============ Database (Optional) ============
+# SQLAlchemy - SQL toolkit
+# sqlalchemy>=2.0.23
+
+# pymongo - MongoDB driver
+# pymongo>=4.6.0
+
+# ============ Cloud Storage (Optional) ============
+# boto3 - AWS SDK
+# boto3>=1.33.0
+
+# google-cloud-storage - GCP Storage
+# google-cloud-storage>=2.10.0
+
+# ============ Monitoring & Experiment Tracking ============
+# mlflow - ML lifecycle management
+# mlflow>=2.8.0
+
+# wandb - Weights & Biases
+# wandb>=0.16.0
+
+# tensorboard - TensorFlow visualization
+# tensorboard>=2.15.0
+
+# ============ Additional NLP Tools ============
+# polyglot - Multilingual NLP
+# polyglot>=16.7.4
+
+# langdetect - Language detection
+langdetect>=1.0.9
+
+# emoji - Emoji handling
+emoji>=2.8.0
+
+# contractions - English contractions expansion
+contractions>=0.1.73
+
+# pyspellchecker - Spell checker
+pyspellchecker>=0.7.3
+
+# ============ Audio Processing (if needed) ============
+# librosa - Audio analysis
+# librosa>=0.10.1
+
+# pydub - Audio manipulation
+# pydub>=0.25.1
+
+# ============ PDF Processing ============
+# PyPDF2 - PDF toolkit
+PyPDF2>=3.0.1
+
+# pdfplumber - PDF text extraction
+pdfplumber>=0.10.3
+
+# ============ Image Processing (if needed) ============
+# Pillow - Image library
+Pillow>=10.1.0
+
+# opencv-python - Computer vision
+# opencv-python>=4.8.1
+
+# ============ Notes ============
+# Para instalar todas las dependencias:
+#   pip install -r requirements.txt
+#
+# Para crear requirements.txt actualizado:
+#   pip freeze > requirements.txt
+#
+# Para instalar dependencias de desarrollo:
+#   pip install -r requirements-dev.txt
+#
+# Para actualizar todas las dependencias:
+#   pip install --upgrade -r requirements.txt
