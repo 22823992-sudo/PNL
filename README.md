@@ -22,11 +22,12 @@ Este repositorio contiene material completo sobre **Procesamiento de Lenguaje Na
 
 ### ✨ Contenido
 
-- 📖 Material teórico estructurado por módulos
-- 💻 Notebooks interactivos con ejemplos prácticos
-- 🔬 Proyectos de laboratorio y ejercicios resueltos
-- 🧪 Implementaciones de algoritmos de NLP
-- 🎓 Proyecto integrador completo
+* 📖 Material teórico estructurado por módulos
+* 💻 Notebooks interactivos con ejemplos prácticos
+* 🔬 Proyectos de laboratorio y ejercicios resueltos
+* 🧪 Implementaciones de algoritmos de NLP
+* 🎓 Proyecto integrador completo
+* 📁 Recursos para RAG, APIs y LLMs
 
 ---
 
@@ -34,20 +35,29 @@ Este repositorio contiene material completo sobre **Procesamiento de Lenguaje Na
 
 ```
 PNL/
-├── 01 Introducción a PNL/           # Fundamentos de NLP
-├── 02 Python/                        # Conceptos básicos de Python
+├── 01 Introducción a PNL/
+├── 02 Python/
 ├── 03 De sopa de letras al análisis lingüístico/
 ├── 04 Vectorización de texto y text mining/
 ├── 05 Text Mining/
 ├── 06 Introducción a embeddings/
 ├── 07 Redes Neuronales/
 ├── 08 Laboratorio de desarrollo/
-├── cabrera-vanesa-nlp-integrador/   # Proyecto integrador
+├── 09 Transfer Learning/
+├── 10 LLMs/
+├── 11 APIs - RAG/
+├── Rag - TP Final/
+├── Ejercicio a entregar/
+├── cabrera-vanesa-nlp-integrador/
 ├── Colab Integrador/
-└── Ejercicio a entregar/
+├── assets/
+├── banner.html
+├── project_structure.md
+├── README.md
+└── Requirements.txt
 ```
 
-📄 Ver [project_structure.md](project_structure.md) para más detalles.
+📄 Ver **project_structure.md** para más detalles.
 
 ---
 
@@ -55,22 +65,17 @@ PNL/
 
 ### Requisitos Previos
 
-- Python 3.8 o superior
-- pip (gestor de paquetes de Python)
-- Git
+* Python 3.8 o superior
+* pip
+* Git
 
-### Pasos
+### Instalación
 
 ```bash
-# 1. Clonar el repositorio
 git clone https://github.com/22823992-sudo/PNL.git
 cd PNL
-
-# 2. Crear entorno virtual (recomendado)
 python -m venv venv
-venv\Scripts\activate  # Windows
-
-# 3. Instalar dependencias
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -79,28 +84,60 @@ pip install -r requirements.txt
 ## 📚 Módulos
 
 ### 1️⃣ Introducción a PNL
-Conceptos fundamentales y aplicaciones del procesamiento de lenguaje natural.
+
+Fundamentos y aplicaciones del procesamiento de lenguaje natural.
 
 ### 2️⃣ Python para NLP
-Estructuras de datos y librerías esenciales para trabajar con texto.
+
+Conceptos de Python esenciales para trabajar con texto.
 
 ### 3️⃣ Procesamiento de Texto
-Tokenización, normalización y limpieza de datos textuales.
+
+Tokenización, normalización y limpieza.
 
 ### 4️⃣ Vectorización y Text Mining
-Bag of Words, TF-IDF y análisis de frecuencias.
+
+TF-IDF, BoW y análisis de frecuencias.
 
 ### 5️⃣ Text Mining Avanzado
-Análisis de sentimientos, clasificación y extracción de información.
+
+Clasificación, análisis de sentimientos y extracción de información.
 
 ### 6️⃣ Embeddings
-Word2Vec, GloVe y representaciones vectoriales de palabras.
+
+Modelos Word2Vec, GloVe y representaciones vectoriales.
 
 ### 7️⃣ Redes Neuronales
-RNNs, LSTMs y arquitecturas modernas para NLP.
 
-### 8️⃣ Laboratorio
-Proyectos integradores y casos de uso reales.
+RNNs, LSTMs y arquitecturas modernas.
+
+### 8️⃣ Laboratorio de Desarrollo
+
+Prácticas, experimentos y mini‑proyectos.
+
+### 9️⃣ Transfer Learning
+
+Modelos preentrenados aplicados a NLP.
+
+### 🔟 LLMs
+
+Uso de modelos grandes de lenguaje, finetuning y evaluación.
+
+### 1️⃣1️⃣ APIs y RAG
+
+Construcción de pipelines RAG, indexación y orquestación.
+
+### 📦 Rag - TP Final
+
+Trabajo práctico final con arquitectura RAG.
+
+### 📝 Ejercicio a entregar
+
+Material requerido para la entrega final.
+
+### 🧩 Proyecto Integrador
+
+Implementaciones finales dentro de `cabrera-vanesa-nlp-integrador`.
 
 ---
 
@@ -109,21 +146,16 @@ Proyectos integradores y casos de uso reales.
 ### Ejecutar Notebooks
 
 ```bash
-# Iniciar Jupyter Notebook
 jupyter notebook
-
-# O usar Google Colab
-# Abre: https://colab.research.google.com/
-# Y carga los notebooks desde GitHub
 ```
+
+O utilizar Google Colab cargando los notebooks desde GitHub.
 
 ### Ejemplo Rápido
 
 ```python
-import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Ejemplo de vectorización
 textos = ["Procesamiento de lenguaje natural", "Aprendiendo NLP"]
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(textos)
@@ -134,19 +166,19 @@ print(X.toarray())
 
 ## 🛠️ Tecnologías
 
-- **Python** - Lenguaje principal
-- **NLTK** - Natural Language Toolkit
-- **spaCy** - NLP industrial
-- **scikit-learn** - Machine Learning
-- **TensorFlow/PyTorch** - Deep Learning
-- **Pandas/NumPy** - Manipulación de datos
-- **Jupyter** - Notebooks interactivos
+* Python
+* NLTK
+* spaCy
+* scikit-learn
+* TensorFlow / PyTorch
+* Pandas / NumPy
+* Jupyter Notebooks
 
 ---
 
 ## 🤝 Contribuir
 
-Las contribuciones son bienvenidas. Por favor lee [CONTRIBUTING.md](CONTRIBUTING.md) para más detalles.
+Las contribuciones son bienvenidas. Consulta **CONTRIBUTING.md** para detalles.
 
 ---
 
@@ -160,10 +192,8 @@ Este proyecto está bajo la Licencia MIT.
 
 **Vanesa Cabrera**
 
-- GitHub: [@22823992-sudo](https://github.com/22823992-sudo)
-- Repositorio: [PNL](https://github.com/22823992-sudo/PNL)
-
----
+* GitHub: @22823992-sudo
+* Repositorio: PNL
 
 <div align="center">
 
