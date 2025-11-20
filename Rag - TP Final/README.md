@@ -1,4 +1,4 @@
-# 📚 Sistema RAG con Gemini + Chroma + Streamlit
+#  Sistema RAG con Gemini + Chroma + Streamlit
 
 Este proyecto implementa un sistema **RAG (Retrieval-Augmented Generation)** utilizando:
 
@@ -12,21 +12,21 @@ El objetivo es permitir al usuario realizar preguntas y obtener respuestas basad
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-### 🔎 Recuperación Semántica
+###  Recuperación Semántica
 El sistema utiliza embeddings + Chroma para encontrar los fragmentos más relevantes en los documentos.
 
-### 🧠 Generación con Gemini 2.5 Flash
+###  Generación con Gemini 2.5 Flash
 El contexto recuperado se envía a Gemini junto con la pregunta del usuario.
 
-### 💬 Interfaz web intuitiva
+###  Interfaz web intuitiva
 Streamlit permite:
 - Ingresar preguntas
 - Ver respuestas generadas
 - Mostrar el contexto utilizado
 
-### ⚡ Carga optimizada
+###  Carga optimizada
 Uso de:
 ```python
 @st.cache_resource
