@@ -1,203 +1,122 @@
-#  Consultor Psicológico Online — Sistema RAG
+# CONSULTOR PSICOLÓGICO ONLINE
 
-Sistema de **Retrieval-Augmented Generation (RAG)** diseñado para responder preguntas psicológicas consultando múltiples manuales, libros y documentos digitalizados.
+## Descripción
 
-Desarrollado como **Trabajo Integrador Nº2**  
-Materia: *Procesamiento del Habla e Introducción a LLMs*  
-Institución: *IFTS 24*  
-Año: **2025**
+Sistema de Retrieval-Augmented Generation (RAG) que permite contestar preguntas consultando varios manuales de psicología.
 
----
+Desarrollado como Trabajo Integrador N°2 para la materia Procesamiento del Habla e Introducción a LLMs (IFTS 24).
 
-##  Descripción
+## Demo
 
-Este sistema permite consultar una gran cantidad de información psicológica almacenada en varios documentos PDF, los cuales se procesan, dividen en fragmentos, se embeben y almacenan en una base de datos vectorial.
+[link](https://consultorpsicologico.streamlit.app/)
 
-Mediante una interfaz simple, el usuario puede hacer preguntas y obtener respuestas basadas **exclusivamente en el contenido del corpus cargado**.
+## Problema que Resuelve
 
----
+El problema que resuelve es poder tener una gran cantidad de información que consultar, embebida y resumida en una base de datos vectorial.
 
-##  Demo
+## Arquitectura del Sistema
 
-🔗 *(Agregar link cuando el deploy esté disponible)*
+### Pipeline RAG
 
----
+1. **Ingesta**: Se utiliza PyMuPDFLoader para cargar documentos PDF desde una carpeta de forma local
+2. **Chunking**: Descubrimos que funciona mejor con chunk_size=1500 y chunk_overlap=150
+3. **Embeddings**: model_name='sentence-transformers/all-MiniLM-L12-v2' (+ rápido - eficiente)
+4. **Almacenamiento**: ChromaDB
+5. **Retrieval**: vectorstore.similarity_search(query, k=3)
+6. **Generation**: model="gemini-2.5-flash"
+7. **Interfaz**: Streamlit
 
-##  Problema que Resuelve
+### Diagrama de Flujo
 
-- Permite gestionar grandes cantidades de información psicológica.
-- Facilita la consulta rápida y precisa.
-- Genera respuestas basadas en fuentes reales, no inventadas.
-- Reduce la dependencia de búsquedas manuales en textos extensos.
-
----
-
-#  Arquitectura del Sistema
-
-##  **Pipeline RAG**
-
-| Etapa            | Descripción |
-|------------------|-------------|
-| **Ingesta**      | Carga de PDFs mediante `PyMuPDFLoader` |
-| **Chunking**     | `chunk_size=1500` con `chunk_overlap=150` (mejores resultados obtenidos) |
-| **Embeddings**   | `sentence-transformers/all-MiniLM-L12-v2` (rápido y eficiente) |
-| **Vector DB**    | ChromaDB persistente |
-| **Retrieval**    | `similarity_search(query, k=3)` |
-| **Generación**   | Modelo **Gemini 2.5 Flash** |
-| **Interfaz**     | Streamlit |
-
----
-
-## 🔁 Diagrama de Flujo
-
- *(Agregar imagen cuando la tengas)*  
-Ejemplo:
+![Imagen](mi_imagen.png)
 
 
-## PDFs → Chunking → Embeddings → ChromaDB → Consulta → Retrieval → Gemini → Respuesta
+## Stack Tecnológico
 
-#  Stack Tecnológico
+- **LLM**: Gemini
+- **Embeddings**: Hugging Face
+- **Vector Database**: ChromaDB
+- **Orquestación**: LangChain
+- **Interfaz**: Streamlit
+- **Deployment**: Streamlit Cloud
+- **Otras librerías**: streamlit,python-dotenv,langchain,langchain-community,chromadb,sentence-transformers,google-genai,langchain_huggingface
 
-###  LLM
-- **Gemini** (Google)
+## Corpus de Documentos
 
-###  Embeddings
-- **HuggingFace Sentence Transformers**
+- **Dominio**: Psicología
+- **Cantidad**: 10
+- **Fuente**: Libros online
+- **Formato**: PDF
+- **Idioma**: Español
 
-###  Base Vectorial
-- **ChromaDB**
+## Instalación y Uso Local
 
-###  Orquestación
-- **LangChain**
+### Prerrequisitos
 
-###  Interfaz
-- **Streamlit**
+- Python 3.9+
+- Gemini API key correspondiente
 
-###  Deployment
-- **Streamlit Cloud**
+### Pasos de Instalación
 
-###  Otras librerías
-- `streamlit`
-- `python-dotenv`
-- `langchain`
-- `langchain-community`
-- `chromadb`
-- `sentence-transformers`
-- `google-genai`
-- `langchain_huggingface`
-
----
-
-#  Corpus de Documentos
-
-- **Dominio:** Psicología  
-- **Cantidad:** 10 PDFs  
-- **Fuente:** Libros digitales / manuales online  
-- **Formato:** PDF  
-- **Idioma:** Español  
-
----
-
-#  Instalación y Uso Local
-
-##  Prerrequisitos
-- Python **3.9+**
-- API Key de **Gemini**
-
----
-
-##  Pasos de Instalación
-
-### 1. Clonar el repositorio
-
+1. Clonar el repositorio:
 ```bash
 git clone https://github.com/HugoDaniel1022/rag_v1.git
 cd rag_v1
-
-## Crear entorno virtual
+Crear entorno virtual:
 python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
-
-# Instalar dependencias
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+Instalar dependencias:
 pip install -r requirements.txt
-
-# Configurar variables de entorno
+Configurar variables de entorno (si aplica):
+# Crear archivo .env con:
 GEMINI_API_KEY=tu_api_key
-
-# Procesar documentos
+# O la configuración que necesites
+[Si es primera vez] Procesar documentos:
 python indexacion.py
-
-# Ejecutar la aplicación
+Ejecutar la aplicación:
 streamlit run app.py
+Abrir en navegador: http://localhost:8501
+```
 
-#Estructura del proyecto
+Estructura del Proyecto
 ├── app.py                  # Aplicación Streamlit principal
-├── indexacion.py           # Proceso de chunking y generación de embeddings
-├── agregar_docs.py         # Funciones auxiliares
-├── requirements.txt        # Dependencias del proyecto
-├── README.md               # Este archivo
-├── .env                    # Configuración local
-├── documentos/             # PDFs fuente
-│   └── *.pdf
-├── chroma_db/              # Base vectorial generada
-└── .gitignore              # Exclusiones de Git
+├── indexacion.py     # Script de ingesta y procesamiento
+├── agregar_docs.py                # Funciones auxiliares
+├── requirements.txt        # Dependencias
+├── README.md              # Este archivo
+├── .env           # Template de variables de entorno
+├── documentos/                  # Documentos fuente
+│   └── [documentos pdf]
+├── chroma_db/             # Base de datos vectorial (generada)
+└── .gitignore            # evita subir algunos archivos a github (opcional)
 
-# Ejemplos de Consultas
 
-“¿Qué es la educación?”
+Ejemplos de Consultas
+Probá estas consultas de ejemplo:
 
-“¿En base a qué dimensiones se define el nivel de desorden del consultante en DBT?”
+- Qué es la educación?
+- En base a qué dimensiones se define El Nivel de desorden del consultante en DBT? 
+- Cuales son las etapas del trastorno DBT?
+- Qué es El duelo?
+- En qué consiste el tratamiento para abordar el duelo?
 
-“¿Cuáles son las etapas del trastorno DBT?”
+Decisiones de Diseño
+¿Por qué elegí Gemini?
+Más rápidez a la hora de contestar.
 
-“¿Qué es el duelo?”
+¿Por qué 1500 de chunksize con 150 de overlap?
+Obtubimos mejores resultados
 
-“¿En qué consiste el tratamiento para abordar el duelo?”
+¿Por qué top-k = 3?
+Obtubimos mejores resultado
 
-# Decisiones de Diseño
-🟣 ¿Por qué Gemini?
+Otras decisiones importantes
+Usamos Streamlit Cloud por familiaridad y facilidad para deployar el proyecto
 
-Más rápido y eficiente durante las pruebas.
+Autor
+Vanesa Cabrera & Hugo D. Peña
 
-Menor costo en consultas.
+Trabajo Integrador N°2 Materia: Procesamiento del Habla e Introducción a LLMs Institución: IFTS 24 - Tecnicatura Superior en Ciencias de Datos e IA Profesor: Matías Barreto Año: 2025
 
-Buena comprensión del idioma español.
-
-🟣 ¿Por qué chunk_size=1500 y overlap=150?
-
-Mejor equilibrio entre contexto útil y carga computacional.
-
-Resultados más precisos en recuperación.
-
-🟣 ¿Por qué top-k = 3?
-
-Buen compromiso entre precisión y velocidad.
-
-Devuelve contexto suficiente sin sobrecargar el prompt.
-
-🟣 ¿Por qué Streamlit Cloud?
-
-Fácil de deployar
-
-Familiaridad con la herramienta
-
-Hosting gratuito
-
-# 👥 Autores
-
-Vanesa Cabrera
-Hugo D. Peña
-
-🏫 Información Académica
-
-Trabajo Integrador Nº2
-Materia: Procesamiento del Habla e Introducción a LLMs
-Institución: IFTS 24 – Tecnicatura Superior en Ciencia de Datos e IA
-Profesor: Matías Barreto
-Año: 2025
-
-# Licencia
-
-Este proyecto se distribuye bajo la licencia MIT.
-
+Licencia
+MIT
