@@ -44,7 +44,7 @@ if st.button("Buscar respuesta"):
         docs = vectorstore.similarity_search(query, k=3)
 
         # Crear contexto combinando los chunks
-        context = "\n".join([d.page_content[:1000] for d in docs])  # limitar tamaño por chunk
+        context = "\n".join([d.page_content[:700] for d in docs])  # limitar tamaño por chunk
 
         # ---------------------------
         # Prompt para Gemini

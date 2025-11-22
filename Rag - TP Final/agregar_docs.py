@@ -9,7 +9,7 @@ from langchain_community.vectorstores import Chroma
 PERSIST_DIR = "db_psico"
 
 # 👉 Ruta donde están los nuevos PDFs
-NUEVOS_DOCS_DIR = "nuevos_documentos/"
+NUEVOS_DOCS_DIR = "nuevos_documentos"
 
 
 def cargar_y_procesar_pdfs(folder_path):
@@ -36,7 +36,7 @@ def cargar_y_procesar_pdfs(folder_path):
 
 def chunkear_documentos(docs):
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1500,
+        chunk_size=700,
         chunk_overlap=150,
         separators=["\n\n", "\n", ".", " "]
     )
@@ -48,6 +48,7 @@ print("📄 Cargando nuevos documentos...")
 docs = cargar_y_procesar_pdfs(NUEVOS_DOCS_DIR)
 if not docs:
     print("No hay documentos nuevos que cargar...")
+    exit()
 
 print("✂️ Dividiendo en chunks...")
 chunks = chunkear_documentos(docs)
@@ -63,8 +64,16 @@ vectorstore = Chroma(
     persist_directory=PERSIST_DIR
 )
 
-print(f"➕ Agregando {len(chunks)} nuevos chunks a la BD...")
-vectorstore.add_documents(chunks)
+# Agregar en lotes de 5000 para evitar el error de batch size
+BATCH_SIZE = 5000
+total_chunks = len(chunks)
+
+print(f"➕ Agregando {total_chunks} nuevos chunks a la BD en lotes de {BATCH_SIZE}...")
+
+for i in range(0, total_chunks, BATCH_SIZE):
+    batch = chunks[i:i+BATCH_SIZE]
+    print(f"   Procesando lote {i//BATCH_SIZE + 1}: chunks {i+1} a {min(i+BATCH_SIZE, total_chunks)}")
+    vectorstore.add_documents(batch)
 
 vectorstore.persist()
 print("✅ Documentos añadidos correctamente.")
