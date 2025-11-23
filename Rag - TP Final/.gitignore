@@ -1,9 +1,16 @@
-
-# Ignorar la base de datos Chroma
+# Ignorar documentos fuente
 documentos/
+nuevos_documentos/
+
+# Ignorar base de datos vectorial
+db_psico/
 
 # Ignorar archivos de entorno
 .env
+.env.*
+*.env
+.env.txt
+.env.local
 .streamlit/secrets.toml
 
 # Ignorar archivos temporales del sistema
@@ -12,4 +19,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.DS_Store
-db_psico/ 
+
+# Ignorar claves
+*.key
+*.pem
