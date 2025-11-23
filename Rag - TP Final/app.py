@@ -1,89 +1,57 @@
 import os
-import streamlit as st
-from dotenv import load_dotenv
-from langchain_community.vectorstores import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
-from google import genai
+from langchain_community.document_loaders import PyMuPDFLoader
 
-# ---------------------------
-# Cargar API key
-# ---------------------------
-load_dotenv()
-api_key = os.getenv("GENAI_API_KEY")
-#api_key = st.secrets["GENAI_API_KEY"]
-# ---------------------------
-# Recursos cacheados
-# ---------------------------
-@st.cache_resource
-def load_vectorstore():
-    embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L12-v2')
-    return Chroma(persist_directory="db_psico", embedding_function=embeddings)
+NUEVOS_DOCS_DIR = "nuevos_documentos"
 
-@st.cache_resource
-def load_client():
-    return genai.Client(api_key=api_key)
+print("=" * 60)
+print("🔍 TEST DE LECTURA DE PDFs")
+print("=" * 60)
 
-vectorstore = load_vectorstore()
-client = load_client()
+# 1. Verificar carpeta
+print(f"\n📁 Verificando carpeta: {NUEVOS_DOCS_DIR}")
+if not os.path.exists(NUEVOS_DOCS_DIR):
+    print("❌ La carpeta no existe")
+    exit()
 
-# ---------------------------
-# Interfaz de Streamlit
-# ---------------------------
-st.title("Psicosaberes")
-st.write("Haz todas las preguntas de lo que quieras saber sobre la Psicología")
+print("✅ Carpeta existe")
 
-# Botón para recargar la base de datos
-if st.button("🔄 Recargar base de datos"):
-    st.cache_resource.clear()
-    st.rerun()
+# 2. Listar archivos
+archivos = os.listdir(NUEVOS_DOCS_DIR)
+print(f"\n📂 Total de archivos: {len(archivos)}")
 
-query = st.text_input("Ingresa tu pregunta:")
+# 3. Filtrar PDFs
+pdfs = [f for f in archivos if f.lower().endswith(".pdf")]
+print(f"📄 PDFs encontrados: {len(pdfs)}")
 
-if st.button("Buscar respuesta"):
-    if query.strip() == "":
-        st.warning("Por favor escribe una pregunta.")
-    else:
-        # ---------------------------
-        # Recuperación de documentos
-        # ---------------------------
-        docs = vectorstore.similarity_search(query, k=3)
+if not pdfs:
+    print("❌ No hay PDFs")
+    exit()
 
-        # Crear contexto combinando los chunks (limitado a 700 caracteres cada uno)
-        context = "\n".join([d.page_content[:700] for d in docs])
+# 4. Mostrar lista de PDFs
+print("\n📋 Lista de PDFs:")
+for i, pdf in enumerate(pdfs, 1):
+    file_path = os.path.join(NUEVOS_DOCS_DIR, pdf)
+    tamaño = os.path.getsize(file_path) / (1024 * 1024)  # MB
+    print(f"   {i}. {pdf} ({tamaño:.2f} MB)")
 
-        # ---------------------------
-        # Prompt para Gemini
-        # ---------------------------
-        prompt = f"""
-Usa el siguiente contexto para responder la pregunta de manera clara y completa.
+# 5. Probar cargar el PRIMER PDF
+print(f"\n⏳ Probando cargar el primer PDF: {pdfs[0]}...")
+try:
+    file_path = os.path.join(NUEVOS_DOCS_DIR, pdfs[0])
+    loader = PyMuPDFLoader(file_path)
+    docs = loader.load()
+    
+    print(f"✅ ¡ÉXITO! Se cargaron {len(docs)} páginas")
+    print(f"📝 Primeros 200 caracteres de la página 1:")
+    print("-" * 60)
+    print(docs[0].page_content[:200])
+    print("-" * 60)
+    
+except Exception as e:
+    print(f"❌ ERROR al cargar: {e}")
+    import traceback
+    traceback.print_exc()
 
-CONTEXTO:
-{context}
-
-PREGUNTA:
-{query}
-
-RESPUESTA:
-"""
-
-        # ---------------------------
-        # Generar respuesta con Gemini
-        # ---------------------------
-        try:
-            response = client.models.generate_content(
-                model="gemini-2.5-flash",
-                contents=prompt
-            )
-            answer = response.text
-        except Exception as e:
-            answer = f"⚠️ Error al generar la respuesta: {e}"
-
-        # ---------------------------
-        # Mostrar resultado
-        # ---------------------------
-        st.subheader("💬 Respuesta")
-        st.write(answer)
-
-        # Mostrar contexto completo usado solo si se quiere
-        with st.expander("📄 Contexto completo usado: "):
-            st.text(context)
+print("\n" + "=" * 60)
+print("✅ TEST COMPLETADO")
+print("=" * 60)
