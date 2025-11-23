@@ -32,6 +32,11 @@ client = load_client()
 st.title("Psicosaberes")
 st.write("Haz todas las preguntas de lo que quieras saber sobre la Psicología")
 
+# Botón para recargar la base de datos
+if st.button("🔄 Recargar base de datos"):
+    st.cache_resource.clear()
+    st.rerun()
+
 query = st.text_input("Ingresa tu pregunta:")
 
 if st.button("Buscar respuesta"):
@@ -43,8 +48,8 @@ if st.button("Buscar respuesta"):
         # ---------------------------
         docs = vectorstore.similarity_search(query, k=3)
 
-        # Crear contexto combinando los chunks
-        context = "\n".join([d.page_content[:700] for d in docs])  # limitar tamaño por chunk
+        # Crear contexto combinando los chunks (limitado a 700 caracteres cada uno)
+        context = "\n".join([d.page_content[:700] for d in docs])
 
         # ---------------------------
         # Prompt para Gemini
